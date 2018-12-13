@@ -26,14 +26,14 @@
   "nwHost": "https://192.168.1.129",
   "nwDeviceID": "6",
   "nwoHost": "https://192.168.1.153",
-  "imageHost": "https://github.com/smennis/nwohunt/blob/master/images",
+  "imageHost": "https://raw.githubusercontent.com/smennis/nwohunt/master/images",
   "assigneeRole": "",
   "autoAssign": "false",
   "huntingContent": "http://192.168.1.153/huntingcontent.json",
   "influencers": {
 	"blacklist": {
       "appendquery": "alert = 'blacklist'",
-	  "icon": "https://github.com/smennis/nwohunt/blob/master/images/blacklist.png",	  
+	  "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/blacklist.png",	  
       "weight": 6
     },
 	"whitelist": {
@@ -41,22 +41,22 @@
     },	
 	"rarity": {
 	  "threshold": 10,
-	  "icon": "https://github.com/smennis/nwohunt/blob/master/images/rarity.png",
+	  "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/rarity.png",
       "weight": 40
     },
 	"possiblebeacon": {
 	  "tolerance": 0.8,
-	  "icon": "https://github.com/smennis/nwohunt/blob/master/images/possiblebeacon.png",
+	  "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/possiblebeacon.png",
       "weight": 40
     },
     "criticalassets": {
       "appendquery": "asset.criticality = 'high'",
-	  "icon": "https://github.com/smennis/nwohunt/blob/master/images/criticalasset.png",
+	  "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/criticalasset.png",
       "weight": 2
     },
     "iocs": {
       "appendquery": "ioc exists",
-      "icon": "https://github.com/smennis/nwohunt/blob/master/images/indicators.png",
+      "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/indicators.png",
       "weight": 3
     }
   }
