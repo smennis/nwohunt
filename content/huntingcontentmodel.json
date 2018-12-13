@@ -29,7 +29,7 @@
   "imageHost": "https://raw.githubusercontent.com/smennis/nwohunt/master/images",
   "assigneeRole": "",
   "autoAssign": "false",
-  "huntingContent": "http://192.168.1.153/huntingcontent.json",
+  "huntingContent": "https://raw.githubusercontent.com/smennis/nwohunt/master/content/huntingcontent.json",
   "influencers": {
 	"blacklist": {
       "appendquery": "alert = 'blacklist'",
