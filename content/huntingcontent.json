@@ -2,16 +2,6 @@
   "Network": {
     "Inbound": {
       "HTTP": {
-        "testbranch": {
-          "alwaysdata": {
-            "details": {
-              "query": "service=137",
-              "description": "This just ensures I always have some test data",
-              "threshold": 250,
-              "refineby": "ip.dst,ip.src"
-            }
-          }
-        },
         "methods": {
           "strangeSequences": {
             "details": {
