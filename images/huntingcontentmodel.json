@@ -1,0 +1,56 @@
+{
+  "model": [   
+    "Medium",
+    "Direction",
+    "Protocol",
+    "Feature 1",
+    "Feature 2",
+	"Feature 3",
+	"query",
+	"description",
+	"-refineby",
+	"-threshold"
+  ],
+  "language": [
+    "-Data Type: ",
+    "-Direction: ",
+    "-Protocol: ",
+    "has",
+    "containing",
+    "where",
+    "and"
+  ],
+  "groupingdepth":3,
+  "verbosity": 0,
+  "queryURL": "https://192.168.1.129/investigation/6/navigate/query/",
+  "influencers": {
+	"blacklist": {
+      "appendquery": "alert = 'blacklist'",
+	  "icon": "http://192.168.1.153/rarity.png",	  
+      "weight": 6
+    },
+	"whitelist": {
+      "appendquery": "alert != 'whitelist'"	  
+    },	
+	"rarity": {
+	  "threshold": 10,
+	  "icon": "http://192.168.1.153/rarity.png",
+      "weight": 40
+    },
+	"possiblebeacon": {
+	  "tolerance": 0.8,
+	  "icon": "http://192.168.1.153/possiblebeacon.png",
+      "weight": 40
+    },
+    "criticalassets": {
+      "appendquery": "asset.criticality = 'high'",
+	  "icon": "http://192.168.1.153/criticalasset.png",
+      "weight": 2
+    },
+    "iocs": {
+      "appendquery": "ioc exists",
+      "icon": "http://192.168.1.153/indicators.png",
+      "weight": 3
+    }
+  }
+}
