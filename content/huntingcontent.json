@@ -244,13 +244,13 @@
             },
             "dynamicDns": {
               "details": {
-                "description": "While there are plenty of legitmate domains leveraging dynamic DNS, it's also a favorite technique used by attackers for hosting their delivery and control infrastructure.  This drill will get you to the dataset, within which you will want to stack ioc and analysis.session keys (NetWitness) as well destination organization.",
+                "description": "While there are plenty of legitmate domains leveraging dynamic DNS, it's also a favorite technique used by attackers for hosting their delivery and control infrastructure.  This drill will get you to the dataset, within which you will want to stack ioc and analysis.session keys as well destination organization.",
                 "query": "service=80 %26%26 direction='outbound' %26%26 analysis.service contains 'dynamic dns'"
               }
             },
             "Dga": {
               "details": {
-                "description": "Dynamically Generated Domains (DGA) are frequently used by malware authors to subvert domain intel based detections. While not constrained, many DGA implementations use algorithms to generate these domains predictably over time, often resulting in strange looking domains with nonsensical words or random looking sequences.  Text analysis based queries are not completely ideal for DGA detection, and many DGA algorithms use legitimate words, so add other types of stacking analysis to this including destination organization, any external domain registration information (eg. domain age), etc.",
+                "description": "Dynamically Generated Domains are frequently used by malware authors to subvert domain intel based detections. While not constrained, many DGA implementations use algorithms to generate these domains predictably over time, often resulting in strange looking domains with nonsensical words or random looking sequences.  Text analysis based queries are not completely ideal for DGA detection, and many DGA algorithms use legitimate words, so add other types of stacking analysis to this including destination organization, any external domain registration information, eg domain age, etc.",
                 "query": "service=80 %26%26 direction='outbound' %26%26 analysis.service contains 'hostname consecutive consonants'"
               }
             }
