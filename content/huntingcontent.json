@@ -293,14 +293,6 @@
                 "description": "The referrer header (mispelled in the actual header as Referer) specifies the URI of where the browser obtained the URI of the request. This is typically populated by search engines when they direct users to certain sites. Since most users get to web sites through seach engines, we look for sessions where this header is missing.",
                 "query": "service=80 %26%26 direction='outbound' %26%26 referer !exists"
               }
-            },
-            "rare": {
-              "details": {
-                "description": "For Inbound traffic, we want to know from where people are vising our site. We look for the outliers. Keep in mind though that organizations can have a number of visitors from all over the world and those referrers may be completely valid.",
-                "query": "service=80 %26%26 direction='outbound' %26%26 referer exists",
-                "threshold": 2000,
-                "refineby": "ip.src,client"
-              }
             }
           },
           "acceptLanguage": {
