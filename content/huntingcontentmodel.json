@@ -45,7 +45,7 @@
       "weight": 40
     },
 	"possiblebeacon": {
-	  "tolerance": 0.8,
+	  "tolerance": 0.25,
 	  "icon": "https://raw.githubusercontent.com/smennis/nwohunt/master/images/possiblebeacon.png",
       "weight": 40
     },
