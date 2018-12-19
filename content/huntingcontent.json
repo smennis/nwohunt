@@ -454,7 +454,7 @@
           "largeEchoRequestReply": {
             "details": {
               "description": "Large ICMP requests can be used for ICMP tunneling. This is typically to increase the bandwidth used in the communication. Since ICMP echo request and echo reply (ping) messages are so small, they need to be padded to fit on the wire, and we can set our 'large' limit to anything larger than 70 bytes. There are traceroute applications that will exceed this limit. We want to identify ICMP traffic where the echo request and echo reply padding are different because this is the mechanism for getting data back into the private IP address space.",
-              "query": "ip.proto=6 %26%26 direction='outbound'"
+              "query": "ip.proto=1 %26%26 direction='outbound'"
             }
           }
         }
